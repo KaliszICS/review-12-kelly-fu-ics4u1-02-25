@@ -32,8 +32,8 @@ public class PracticeProblem {
 	public static int countWords(String str, char letter){
 		String[] word = str.split(" ");
 		int count = 0;
-		for (int i = 0; i < str.length(); i++){
-			if (str.charAt(i) == letter){
+		for (int i = 0; i < word.length; i++){
+			if (word[i].contains(String.valueOf(letter))){
 				count++;
 			}	
 		}
